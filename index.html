@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .chatbox {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        .chat-header {
+            background: #4F46E5;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .chat-messages {
+            height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        .chat-input {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+        .animated-image {
+            transition: transform 0.3s ease-in-out;
+        }
+        .animated-image:hover {
+            transform: scale(1.1);
+        }
+        .highlight-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1E40AF;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .highlight-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #1E40AF;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .highlight-title:hover {
+            color: #2563EB;
+        }
+        .about-text {
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow p-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-bold"></h1>
+            <p class="text-lg font-extrabold text-blue-600 uppercase tracking-wider">🚀 Welcome to Our IT Solutions - Empowering Your Business with Cutting-Edge Technology! 💡</p>
+        </div>
+        <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+            <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center text-white text-left px-10" style="background-image: url('image.png');">
+       
+    </section>
+    
+    <section id="about" class="p-10 bg-white text-center">
+        <h2 class="text-4xl font-extrabold text-blue-600">About Us</h2>
+        <p class="mt-4 text-gray-600">Founded in 2003, our IT company has been at the forefront of technological innovation, delivering cutting-edge solutions in software development, cloud computing, and cybersecurity. With a strong commitment to excellence, we have expanded our services globally, catering to diverse industries and empowering businesses with advanced digital solutions. Our expert team, led by visionary leaders, continuously drives innovation, earning industry recognition and forging strong client partnerships. Over the years, we have contributed to the IT sector through open-source projects, strategic collaborations, and community-driven initiatives.</p>
+    </section>
+    
+    <section id="services" class="p-10 bg-gray-100 text-center">
+        <h2 class="text-4xl font-extrabold text-blue-600">Our Services</h2>
+        <div class="mt-4 flex justify-center space-x-4">
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="web.jpg" alt="Web Development" class="w-full h-32 object-cover rounded animated-image">
+                <p>Web Development</p>
+            </div>
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="mbl.jpg" alt="Mobile App Development" class="w-full h-32 object-cover rounded animated-image">
+                <p>Mobile App Development</p>
+            </div>
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="cloud.jpg" alt="Cloud Solutions" class="w-full h-32 object-cover rounded animated-image">
+                <p>Cloud Solutions</p>
+            </div>
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="network.jpg" alt="Mobile App Development" class="w-full h-32 object-cover rounded animated-image">
+                <p>Network Security</p>
+            </div>
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="cyber.jpg" alt="Mobile App Development" class="w-full h-32 object-cover rounded animated-image">
+                <p>Cyber Security</p>
+            </div>
+            <div class="p-5 bg-white shadow rounded-lg">
+                <img src="help.jpg" alt="Mobile App Development" class="w-full h-32 object-cover rounded animated-image">
+                <p>Help desk</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="p-10 bg-white text-center">
+        <h2 class="text-4xl font-extrabold text-blue-600">Portfolio</h2>
+        <p class="mt-4 text-gray-600">Check out our latest projects.</p>
+        <a href="https://yashaswi315.github.io/resumemaker/" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">View Projects</a>
+    </section>
+    
+    <section id="contact" class="p-10 bg-gray-100 text-center">
+        <h2 class="text-4xl font-extrabold text-blue-600">Contact Us</h2>
+        <form class="mt-4 max-w-md mx-auto">
+            <input type="text" placeholder="Your Name" class="block w-full p-2 mb-4 border rounded" required>
+            <input type="email" placeholder="Your Email" class="block w-full p-2 mb-4 border rounded" required>
+            <textarea placeholder="Your Message" class="block w-full p-2 mb-4 border rounded" required></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+    </section>
+    
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header" onclick="toggleChat()">Chat with us</div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <input type="text" id="chat-input" class="chat-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+    </div>
+    
+    <button onclick="toggleChat()" class="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full hover:bg-blue-700">Chat</button>
+    
+    <script>
+        function toggleChat() {
+            const chatbox = document.getElementById('chatbox');
+            chatbox.style.display = chatbox.style.display === 'block' ? 'none' : 'block';
+        }
+        function sendMessage(event) {
+            if (event.key === 'Enter') {
+                const input = document.getElementById('chat-input');
+                const messages = document.getElementById('chat-messages');
+                if (input.value.trim() !== '') {
+                    messages.innerHTML += `<div class='p-2 bg-gray-200 my-1 rounded'>${input.value}</div>`;
+                    input.value = '';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
